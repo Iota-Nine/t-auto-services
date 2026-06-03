@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Devis | T Auto Services, 06 99 93 97 74</title>
+  <meta name="description" content="Contactez T Auto Services pour remorquage ou enlèvement d'épave en Île-de-France. Disponible 24h/24. Devis au 06 99 93 97 74.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.tautoservices.fr/contact.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+  <div class="phone-bar">
+    <a href="tel:+33699939774" class="phone-bar__link" aria-label="Appel immédiat, 06 99 93 97 74">
+      <span class="phone-bar__label">Appel immédiat</span>
+      <span class="phone-bar__number">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        06 99 93 97 74
+      </span>
+      <span class="phone-bar__badge">24h/24</span>
+    </a>
+  </div>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo logo--sm"><span class="logo__t">T</span><span class="logo__brand"><span class="logo__autos">Autos</span><span class="logo__services">Services</span></span></a>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Accueil</a></li>
+          <li><a href="remorquage.html" class="nav__link">Remorquage</a></li>
+          <li><a href="enlevement-epaves.html" class="nav__link">Enlèvement</a></li>
+          <li><a href="contact.html" class="nav__link nav__link--active">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero__bg">
+        <img src="assets/hero-truck.png" alt="" width="1024" height="682" loading="eager">
+      </div>
+      <div class="page-hero__shade" aria-hidden="true"></div>
+      <div class="container page-hero__body">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> › Contact</nav>
+        <h1>Contactez <span>T Auto Services</span></h1>
+        <p class="page-hero__lead">Pour une urgence remorquage, appelez directement. Pour un devis enlèvement ou une demande professionnelle, utilisez le formulaire ou le téléphone.</p>
+        <a href="tel:+33699939774" class="btn btn--yellow btn--lg">Appeler maintenant</a>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Coordonnées</h2>
+          <p>Le moyen le plus rapide : la barre jaune en haut ou le bouton ci-dessous. Nous répondons de jour comme de nuit.</p>
+          <a href="tel:+33699939774" class="btn btn--yellow btn--lg contact__call">Appeler maintenant</a>
+
+          <div class="contact-details">
+            <div class="contact-detail"><strong>Horaires</strong><span>24h/24, 7j/7, jours fériés inclus</span></div>
+            <div class="contact-detail"><strong>Zone</strong><span>Île-de-France, Paris et région parisienne</span></div>
+            <div class="contact-detail"><strong>Services</strong><span>Remorquage, dépannage, enlèvement épaves</span></div>
+            <div class="contact-detail"><strong>Tarifs</strong><span>Remorquage 150€, enlèvement 1,80€/km</span></div>
+          </div>
+
+          <div class="contact-urgency">
+            <h3>En cas d'urgence sur la route</h3>
+            <p>Mettez votre véhicule en sécurité (gilet, triangle), puis appelez-nous avec votre localisation exacte.</p>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" action="#" method="post">
+          <h2>Demande de devis</h2>
+          <p class="form-note">Pour une urgence, privilégiez l'appel téléphonique.</p>
+          <div class="form-group">
+            <label for="name">Nom complet *</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="phone">Téléphone *</label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="06 12 34 56 78">
+          </div>
+          <div class="form-group">
+            <label for="service">Type de demande *</label>
+            <select id="service" name="service" required>
+              <option value="">Sélectionnez...</option>
+              <option value="remorquage">Remorquage urgent</option>
+              <option value="epave">Enlèvement d'épave</option>
+              <option value="depannage">Dépannage sur place</option>
+              <option value="pro">Demande professionnelle</option>
+              <option value="devis">Devis / renseignement</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="location">Localisation (ville, code postal)</label>
+            <input type="text" id="location" name="location" placeholder="Ex : Paris 75015">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Décrivez votre situation..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--yellow btn--lg btn--block">Envoyer la demande</button>
+          <p class="form-success" id="form-success" hidden>Merci ! Pour une réponse immédiate, appelez le <a href="tel:+33699939774">06 99 93 97 74</a>.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo logo--sm"><span class="logo__t">T</span><span class="logo__brand"><span class="logo__autos">Autos</span><span class="logo__services">Services</span></span></a>
+        <p>06 99 93 97 74, 24h/24</p>
+      </div>
+      <nav aria-label="Services"><h3>Services</h3><ul><li><a href="remorquage.html">Remorquage</a></li><li><a href="enlevement-epaves.html">Enlèvement</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+      <nav aria-label="Infos"><h3>Informations</h3><ul><li><a href="index.html#tarifs">Tarifs</a></li><li><a href="index.html">Accueil</a></li></ul></nav>
+    </div>
+    <div class="footer__bottom"><div class="container"><p>&copy; 2026 T Auto Services</p><p class="footer__location"><svg class="icon icon--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Île-de-France</p></div></div>
+  </footer>
+  <a href="tel:+33699939774" class="float-call" aria-label="Appeler"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+  <script src="js/main.js"></script>
+</body>
+</html>
