@@ -6,7 +6,7 @@
       "@id": "https://tautoservices.com/#website",
       "url": "https://tautoservices.com/",
       "name": "T Auto Services",
-      "description": "Remorquage, enlèvement gratuit et transport véhicule 24h/24 en Île-de-France. Appelez le 06 99 93 97 74.",
+      "description": "Remorquage, enlèvement et transport véhicule sur devis, toute la France. Appelez le 06 99 93 97 74.",
       "inLanguage": "fr-FR",
       "publisher": { "@id": "https://tautoservices.com/#business" },
       "potentialAction": {
@@ -33,7 +33,7 @@
       "priceRange": "€€",
       "currenciesAccepted": "EUR",
       "paymentAccepted": "Cash, Credit Card, Bank Transfer",
-      "description": "Remorquage 100€ TTC (80€ HT), enlèvement d'épave gratuit, transport véhicule 1,80€/km jusqu'à 120 km puis sur devis. Intervention 24h/24 et 7j/7 en Île-de-France (75, 77, 78, 91, 92, 93, 94, 95).",
+      "description": "Remorquage, enlèvement et transport véhicule sur devis, 24h/24 et 7j/7. Remorquage et transport dans toute la France.",
       "serviceType": ["Remorquage", "Enlèvement d'épaves", "Transport véhicule", "Dépannage"],
       "address": {
         "@type": "PostalAddress",
@@ -90,7 +90,7 @@
       "knowsAbout": [
         "Remorquage voiture",
         "Remorquage 24h/24",
-        "Enlèvement épave gratuit",
+        "Enlèvement épave",
         "Transport véhicule",
         "Véhicule en panne",
         "Véhicule accidenté",
@@ -100,27 +100,24 @@
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Tarifs T Auto Services",
+        "name": "Prestations T Auto Services",
         "itemListElement": [
           {
             "@type": "Offer",
-            "price": "100",
             "priceCurrency": "EUR",
-            "description": "Forfait remorquage 80€ HT / 100€ TTC",
+            "description": "Remorquage véhicule sur devis, toute la France",
             "itemOffered": { "@type": "Service", "name": "Remorquage véhicule", "serviceType": "Remorquage" }
           },
           {
             "@type": "Offer",
-            "price": "0",
             "priceCurrency": "EUR",
-            "description": "Enlèvement sur site gratuit",
+            "description": "Enlèvement sur site sur devis",
             "itemOffered": { "@type": "Service", "name": "Enlèvement épave sur site", "serviceType": "Enlèvement d'épaves" }
           },
           {
             "@type": "Offer",
-            "price": "1.80",
             "priceCurrency": "EUR",
-            "description": "Transport 1,80€/km jusqu'à 120 km, sur devis au-delà",
+            "description": "Transport véhicule sur devis, toute la France",
             "itemOffered": { "@type": "Service", "name": "Transport véhicule", "serviceType": "Transport" }
           }
         ]
