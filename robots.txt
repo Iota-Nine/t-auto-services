@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.tautoservices.fr/sitemap.xml
+Sitemap: https://www.tautoservices.com/sitemap.xml
