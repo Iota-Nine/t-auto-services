@@ -75,4 +75,47 @@
 
     revealEls.forEach(function (el) { observer.observe(el); });
   }
+
+  var reviewsTrack = document.getElementById('reviews-track');
+  if (reviewsTrack) {
+    var reviews = [
+      { name: 'mehdi_k92', place: 'Nanterre', service: 'Remorquage', text: 'top merci bcp', short: true },
+      { name: 'Sophie', place: 'Paris 15e', service: 'Remorquage', text: 'Bloquée un dimanche soir, venu en 40 min. 100€ comme annoncé au tel. Merci !' },
+      { name: 'TomCreteil', place: 'Créteil', service: 'Dépannage', text: 'tres pro rapide nickel', short: true },
+      { name: 'Karim', place: 'Boulogne', service: 'Remorquage', text: 'reponse rapide gars sympa je recommande' },
+      { name: 'nadou_78', place: 'Versailles', service: 'Enlèvement', text: 'Enlevement epave gratuit comme promis. Rien a redire merci' },
+      { name: 'Marie', place: 'Montreuil', service: 'Remorquage', text: 'Appel a 23h ils sont venu vite, super' },
+      { name: 'aicha.sd93', place: 'Saint-Denis', service: 'Transport', text: 'Parfait.', short: true },
+      { name: 'Lucas', place: 'Évry', service: 'Remorquage', text: 'nickel merci', short: true },
+      { name: 'jp_boul92', place: 'Boulogne', service: 'Remorquage', text: 'Prix annoncé = facture. RAS' },
+      { name: 'Claire', place: 'Versailles', service: 'Remorquage', text: 'Ma clio en panne, remorqué sans souci. Merci !' },
+      { name: 'fatima_b', place: 'Cergy', service: 'Enlèvement', text: 'top', short: true },
+      { name: 'Yann', place: 'Melun', service: 'Transport', text: 'Super service merci bcp' },
+      { name: 'soph_paris15', place: 'Paris 11e', service: 'Remorquage', text: 'Disponible direct, rien a dire merci' },
+      { name: 'Bruno', place: 'Nanterre', service: 'Dépannage', text: 'Serieux et rapide je conseille' },
+      { name: 'leila_93', place: 'Bobigny', service: 'Remorquage', text: 'Merci encore', short: true },
+      { name: 'Antoine', place: 'Créteil', service: 'Transport', text: 'Camion propre chauffeur cool. 5/5' }
+    ];
+
+    function buildCard(review) {
+      var textClass = review.short ? ' review-card__text--short' : '';
+      return '<article class="review-card">' +
+        '<div class="review-card__stars" aria-hidden="true">★★★★★</div>' +
+        '<blockquote class="review-card__text' + textClass + '">' + review.text + '</blockquote>' +
+        '<footer class="review-card__author">' +
+        '<strong>' + review.name + '</strong>' +
+        '<span>' + review.place + ' · ' + review.service + '</span>' +
+        '</footer></article>';
+    }
+
+    for (var i = reviews.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = reviews[i];
+      reviews[i] = reviews[j];
+      reviews[j] = temp;
+    }
+
+    var html = reviews.map(buildCard).join('');
+    reviewsTrack.innerHTML = html + html;
+  }
 })();

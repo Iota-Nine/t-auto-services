@@ -95,8 +95,8 @@
         "Véhicule en panne",
         "Véhicule accidenté",
         "Camion plateau",
-        "Dépannage autoroute",
-        "Remorquage périphérique Paris"
+        "Dépannage urgence",
+        "Remorquage banlieue parisienne"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
