@@ -6,7 +6,7 @@
       "@id": "https://tautoservices.com/#website",
       "url": "https://tautoservices.com/",
       "name": "T Auto Services",
-      "description": "Remorquage, enlèvement et transport véhicule sur devis, toute la France. Appelez le 06 99 93 97 74.",
+      "description": "Remorquage, enlèvement et transport sur devis, toute la France. Intervention 24h/24.",
       "inLanguage": "fr-FR",
       "publisher": { "@id": "https://tautoservices.com/#business" },
       "potentialAction": {
@@ -33,7 +33,7 @@
       "priceRange": "€€",
       "currenciesAccepted": "EUR",
       "paymentAccepted": "Cash, Credit Card, Bank Transfer",
-      "description": "Remorquage, enlèvement et transport véhicule sur devis, 24h/24 et 7j/7. Remorquage et transport dans toute la France.",
+      "description":"Remorquage, enlèvement et transport sur devis, toute la France. Intervention urgente 24h/24 Paris et Île-de-France.",
       "serviceType": ["Remorquage", "Enlèvement d'épaves", "Transport véhicule", "Dépannage"],
       "address": {
         "@type": "PostalAddress",
