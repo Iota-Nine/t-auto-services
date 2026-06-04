@@ -215,8 +215,11 @@ ul { list-style: none; }
 
 .nav__list { display: flex; gap: 6px; }
 .nav__link {
-  padding: 10px 18px; color: rgba(255, 255, 255, 0.65); border-radius: 999px;
-  font-weight: 500; font-size: 0.875rem; transition: all var(--transition);
+  padding: 10px 14px; color: rgba(255, 255, 255, 0.65); border-radius: 999px;
+  font-weight: 500; font-size: 0.8125rem; transition: all var(--transition);
+}
+@media (min-width: 1200px) {
+  .nav__link { padding: 10px 18px; font-size: 0.875rem; }
 }
 .nav__link:hover { color: var(--white); background: rgba(255, 255, 255, 0.06); }
 .nav__link--active {
@@ -506,6 +509,24 @@ body:has(.hero) .header {
   margin: 0 auto;
 }
 .pricing--simple { max-width: 820px; }
+.pricing--triple {
+  max-width: 1100px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.pricing--quad {
+  max-width: 1100px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (min-width: 900px) {
+  .pricing--quad { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+.content .pricing { margin-left: 0; margin-right: 0; }
+.pricing--duo { max-width: 820px; margin-left: 0; margin-right: 0; }
+.pricing__disclaimer {
+  margin-top: 16px;
+  font-size: 0.875rem;
+  color: var(--gray);
+}
 .pricing__cta {
   max-width: 540px;
   margin: 48px auto 0;

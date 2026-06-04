@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>T Auto Services, Remorquage, Enlèvement & Dépannage Île-de-France | 06 99 93 97 74</title>
-  <meta name="description" content="T Auto Services : remorquage, enlèvement et dépannage 24h/24 en Île-de-France. Remorquage 150€, enlèvement 1,80€/km. Appelez le 06 99 93 97 74.">
+  <meta name="description" content="T Auto Services : remorquage, enlèvement gratuit et transport 24h/24. Remorquage 100€ TTC (80€ HT) en Île-de-France, transport 1,80€/km (120 km max, au-delà sur devis). Appelez le 06 99 93 97 74.">
   <meta name="keywords" content="remorquage ile de france, enlèvement épave, dépannage auto, remorquage 24h, T Auto Services, remorquage pas cher paris">
   <meta name="robots" content="index, follow">
   <meta name="author" content="T Auto Services">
@@ -38,13 +38,14 @@
       "closes": "23:59"
     },
     "areaServed": {"@type": "AdministrativeArea", "name": "Île-de-France"},
-    "serviceType": ["Remorquage", "Enlèvement d'épaves", "Dépannage automobile"],
+    "serviceType": ["Remorquage", "Enlèvement d'épaves", "Transport véhicule"],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Tarifs T Auto Services",
       "itemListElement": [
-        {"@type": "Offer", "price": "150", "priceCurrency": "EUR", "itemOffered": {"@type": "Service", "name": "Remorquage véhicule"}},
-        {"@type": "Offer", "price": "1.80", "priceCurrency": "EUR", "itemOffered": {"@type": "Service", "name": "Enlèvement épave au kilomètre"}}
+        {"@type": "Offer", "price": "100", "priceCurrency": "EUR", "itemOffered": {"@type": "Service", "name": "Remorquage véhicule"}},
+        {"@type": "Offer", "price": "0", "priceCurrency": "EUR", "itemOffered": {"@type": "Service", "name": "Enlèvement épave sur site"}},
+        {"@type": "Offer", "price": "1.80", "priceCurrency": "EUR", "itemOffered": {"@type": "Service", "name": "Transport véhicule au kilomètre (jusqu'à 120 km, au-delà sur devis)"}}
       ]
     }
   }
@@ -59,7 +60,7 @@
         "name": "Quels sont les tarifs de remorquage T Auto Services ?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Remorquage : 150€. Enlèvement d'épaves : 1,80€/km. Tarif annoncé avant départ."
+          "text": "Remorquage : 80€ HT / 100€ TTC. Enlèvement : gratuit. Transport : 1,80€/km jusqu'à 120 km, sur devis au-delà. Tarif annoncé avant départ."
         }
       },
       {
@@ -102,6 +103,7 @@
           <li><a href="index.html" class="nav__link nav__link--active">Accueil</a></li>
           <li><a href="remorquage.html" class="nav__link">Remorquage</a></li>
           <li><a href="enlevement-epaves.html" class="nav__link">Enlèvement</a></li>
+          <li><a href="transport.html" class="nav__link">Transport</a></li>
           <li><a href="contact.html" class="nav__link">Contact</a></li>
         </ul>
       </nav>
@@ -119,7 +121,7 @@
           <h1 class="hero__title">
             <span class="hero__title-line hero__title-line--white">Remorquage</span>
             <span class="hero__title-line hero__title-line--yellow">Enlèvement</span>
-            <span class="hero__title-line hero__title-line--white">Dépannage</span>
+            <span class="hero__title-line hero__title-line--white">Transport</span>
           </h1>
           <p class="hero__motto">Rapide, Fiable, Disponible 7j/7</p>
           <div class="hero__actions">
@@ -213,7 +215,7 @@
           <h2>Tarifs transparents</h2>
           <p>Pas de mauvaise surprise, le prix vous est communiqué avant le départ de notre dépanneur.</p>
         </header>
-        <div class="pricing pricing--simple">
+        <div class="pricing pricing--simple pricing--quad">
           <div class="pricing__main">
             <div class="pricing__header">Remorquage</div>
             <div class="pricing__body">
@@ -222,22 +224,46 @@
                   <strong>Forfait remorquage</strong>
                   Déplacement, chargement et transport
                 </div>
-                <div class="pricing__price">150€</div>
+                <div class="pricing__price">80€ <small>HT · 100€ TTC</small></div>
               </div>
             </div>
           </div>
           <div class="pricing__main">
-            <div class="pricing__header">Enlèvement d'épaves</div>
+            <div class="pricing__header">Enlèvement</div>
             <div class="pricing__body">
               <div class="pricing__row">
                 <div class="pricing__label">
-                  <strong>Tarif kilométrique</strong>
-                  Enlèvement et transport véhicule hors d'usage
+                  <strong>Enlèvement sur site</strong>
+                  Prise en charge véhicule à l'adresse
+                </div>
+                <div class="pricing__price">Gratuit</div>
+              </div>
+            </div>
+          </div>
+          <div class="pricing__main">
+            <div class="pricing__header">Transport · 1,80€/km</div>
+            <div class="pricing__body">
+              <div class="pricing__row">
+                <div class="pricing__label">
+                  <strong>Jusqu'à 120 km</strong>
+                  Toute la France
                 </div>
                 <div class="pricing__price">1,80€<small>/km</small></div>
               </div>
             </div>
-            <div class="pricing__note">Prix annoncé avant intervention.</div>
+          </div>
+          <div class="pricing__main">
+            <div class="pricing__header">Transport · Sur devis</div>
+            <div class="pricing__body">
+              <div class="pricing__row">
+                <div class="pricing__label">
+                  <strong>Au-delà de 120 km</strong>
+                  Longue distance
+                </div>
+                <div class="pricing__price">Sur devis</div>
+              </div>
+            </div>
+            <div class="pricing__note">Devis gratuit avant intervention.</div>
           </div>
         </div>
         <div class="pricing__cta">
@@ -327,7 +353,7 @@
         <div class="faq">
           <details class="faq__item">
             <summary>Quels sont vos tarifs ?</summary>
-            <p><strong>Remorquage : 150€.</strong> <strong>Enlèvement d'épaves : 1,80€/km.</strong> Le tarif vous est annoncé avant le départ de notre dépanneur.</p>
+            <p><strong>Remorquage : 80€ HT / 100€ TTC.</strong> <strong>Enlèvement : gratuit.</strong> <strong>Transport : 1,80€/km jusqu'à 120 km, sur devis au-delà.</strong> Le tarif vous est annoncé avant le départ de notre dépanneur.</p>
           </details>
           <details class="faq__item">
             <summary>Intervenez-vous la nuit et le week-end ?</summary>
@@ -339,7 +365,7 @@
           </details>
           <details class="faq__item">
             <summary>Proposez-vous l'enlèvement d'épaves ?</summary>
-            <p>Oui, enlèvement de véhicules hors d'usage en Île-de-France à <strong>1,80€/km</strong>. Contactez-nous au <a href="tel:+33699939774">06 99 93 97 74</a> pour un devis.</p>
+            <p>Oui, l'<strong>enlèvement est gratuit</strong>. Le transport est facturé à <strong>1,80€/km jusqu'à 120 km</strong>, puis <strong>sur devis</strong> au-delà. Contactez-nous au <a href="tel:+33699939774">06 99 93 97 74</a>.</p>
           </details>
         </div>
       </div>
@@ -362,7 +388,8 @@
         <h3>Services</h3>
         <ul>
           <li><a href="remorquage.html">Remorquage</a></li>
-          <li><a href="enlevement-epaves.html">Enlèvement épaves</a></li>
+          <li><a href="enlevement-epaves.html">Enlèvement</a></li>
+          <li><a href="transport.html">Transport</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
