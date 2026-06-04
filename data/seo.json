@@ -3,25 +3,48 @@
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": "https://www.tautoservices.com/#website",
-      "url": "https://www.tautoservices.com/",
+      "@id": "https://tautoservices.com/#website",
+      "url": "https://tautoservices.com/",
       "name": "T Auto Services",
-      "description": "Remorquage, enlèvement gratuit et transport véhicule 24h/24. Appelez le 06 99 93 97 74.",
+      "description": "Remorquage, enlèvement gratuit et transport véhicule 24h/24 en Île-de-France. Appelez le 06 99 93 97 74.",
       "inLanguage": "fr-FR",
-      "publisher": { "@id": "https://www.tautoservices.com/#business" }
+      "publisher": { "@id": "https://tautoservices.com/#business" },
+      "potentialAction": {
+        "@type": "CommunicateAction",
+        "name": "Appeler T Auto Services",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "tel:+33699939774",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/MobileWebPlatform"
+          ]
+        }
+      }
     },
     {
       "@type": ["AutoRepair", "LocalBusiness", "TowingService"],
-      "@id": "https://www.tautoservices.com/#business",
+      "@id": "https://tautoservices.com/#business",
       "name": "T Auto Services",
-      "url": "https://www.tautoservices.com/",
-      "logo": "https://www.tautoservices.com/assets/favicon.svg",
-      "image": "https://www.tautoservices.com/assets/hero-truck.png",
+      "url": "https://tautoservices.com/",
+      "logo": "https://tautoservices.com/assets/favicon.svg",
+      "image": "https://tautoservices.com/assets/hero-truck.png",
       "telephone": "+33699939774",
       "priceRange": "€€",
       "currenciesAccepted": "EUR",
       "paymentAccepted": "Cash, Credit Card, Bank Transfer",
-      "description": "Remorquage 100€ TTC (80€ HT), enlèvement d'épave gratuit, transport véhicule 1,80€/km jusqu'à 120 km puis sur devis. Intervention 24h/24 et 7j/7.",
+      "description": "Remorquage 100€ TTC (80€ HT), enlèvement d'épave gratuit, transport véhicule 1,80€/km jusqu'à 120 km puis sur devis. Intervention 24h/24 et 7j/7 en Île-de-France (75, 77, 78, 91, 92, 93, 94, 95).",
+      "serviceType": ["Remorquage", "Enlèvement d'épaves", "Transport véhicule", "Dépannage"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Île-de-France",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.8566,
+        "longitude": 2.3522
+      },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -60,6 +83,8 @@
         { "@type": "City", "name": "Évry-Courcouronnes" },
         { "@type": "City", "name": "Melun" },
         { "@type": "City", "name": "Cergy" },
+        { "@type": "City", "name": "Saint-Denis" },
+        { "@type": "City", "name": "Boulogne-Billancourt" },
         { "@type": "Country", "name": "France" }
       ],
       "knowsAbout": [
@@ -69,7 +94,9 @@
         "Transport véhicule",
         "Véhicule en panne",
         "Véhicule accidenté",
-        "Camion plateau"
+        "Camion plateau",
+        "Dépannage autoroute",
+        "Remorquage périphérique Paris"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -98,61 +125,20 @@
           }
         ]
       },
-      "sameAs": []
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://www.tautoservices.com/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Quels sont les tarifs de remorquage T Auto Services ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Remorquage : 80€ HT / 100€ TTC. Enlèvement : gratuit. Transport : 1,80€/km jusqu'à 120 km, sur devis au-delà. Tarif annoncé avant départ. Appelez le 06 99 93 97 74."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Intervenez-vous la nuit et le week-end ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oui, T Auto Services est disponible 24h/24 et 7j/7 en Île-de-France, y compris jours fériés. Appelez le 06 99 93 97 74."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Mon assurance prend-elle en charge le remorquage ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Souvent oui, selon votre contrat (assistance 0 km, garantie panne). Nous fournissons une facture détaillée pour votre remboursement."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Proposez-vous l'enlèvement d'épaves gratuit ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oui, l'enlèvement sur site est gratuit. Le transport est facturé à 1,80€/km jusqu'à 120 km, puis sur devis au-delà. Contact : 06 99 93 97 74."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Qui appeler pour un remorquage urgent en Île-de-France ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Appelez T Auto Services au 06 99 93 97 74. Remorquage rapide 24h/24 à Paris et en région parisienne, tarif annoncé avant départ."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Intervenez-vous sur autoroute et périphérique ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oui, nous intervenons sur autoroutes, périphérique parisien, centre-ville et zones résidentielles en Île-de-France. Appelez le 06 99 93 97 74."
-          }
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "Demander un remorquage",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "tel:+33699939774",
+          "inLanguage": "fr-FR",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/MobileWebPlatform"
+          ]
         }
-      ]
+      },
+      "sameAs": []
     }
   ]
 }
