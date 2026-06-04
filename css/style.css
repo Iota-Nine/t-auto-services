@@ -94,7 +94,7 @@ ul { list-style: none; }
   color: var(--yellow); letter-spacing: -1px;
 }
 .logo__brand { display: flex; flex-direction: column; line-height: 1.05; gap: 2px; }
-.logo__autos {
+.logo__auto {
   font-family: var(--font-display);
   font-size: 1rem; font-weight: 600; letter-spacing: 2px;
   color: var(--white); text-transform: uppercase;
@@ -108,7 +108,7 @@ ul { list-style: none; }
   text-transform: uppercase; align-self: flex-start;
 }
 .logo--sm .logo__t { font-size: 1.72rem; }
-.logo--sm .logo__autos { font-size: 0.85rem; letter-spacing: 1.5px; }
+.logo--sm .logo__auto { font-size: 0.85rem; letter-spacing: 1.5px; }
 
 /* ─── Buttons ─── */
 .btn {
