@@ -1,7 +1,7 @@
 {
   "name": "T Auto Services",
   "short_name": "T Auto",
-  "description": "Remorquage, enlèvement et transport sur devis, toute la France.",
+  "description": "Enlèvement d'épave et transport sur devis, toute la France.",
   "start_url": "/",
   "display": "browser",
   "background_color": "#080808",

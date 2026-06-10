@@ -6,7 +6,7 @@
       "@id": "https://tautoservices.com/#website",
       "url": "https://tautoservices.com/",
       "name": "T Auto Services",
-      "description": "Remorquage, enlèvement et transport sur devis, toute la France. Intervention 24h/24.",
+      "description": "Enlèvement d'épave et transport de véhicule sur devis, toute la France. Intervention 24h/24.",
       "inLanguage": "fr-FR",
       "publisher": { "@id": "https://tautoservices.com/#business" },
       "potentialAction": {
@@ -23,7 +23,7 @@
       }
     },
     {
-      "@type": ["AutoRepair", "LocalBusiness", "TowingService"],
+      "@type": ["AutoRepair", "LocalBusiness"],
       "@id": "https://tautoservices.com/#business",
       "name": "T Auto Services",
       "url": "https://tautoservices.com/",
@@ -33,8 +33,8 @@
       "priceRange": "€€",
       "currenciesAccepted": "EUR",
       "paymentAccepted": "Cash, Credit Card, Bank Transfer",
-      "description":"Remorquage, enlèvement et transport sur devis, toute la France. Intervention urgente 24h/24 Paris et Île-de-France.",
-      "serviceType": ["Remorquage", "Enlèvement d'épaves", "Transport véhicule", "Dépannage"],
+      "description":"Enlèvement d'épave et transport de véhicule sur devis, toute la France. Intervention 24h/24 Paris et Île-de-France.",
+      "serviceType": ["Enlèvement d'épaves", "Transport véhicule"],
       "address": {
         "@type": "PostalAddress",
         "addressRegion": "Île-de-France",
@@ -88,26 +88,20 @@
         { "@type": "Country", "name": "France" }
       ],
       "knowsAbout": [
-        "Remorquage voiture",
-        "Remorquage 24h/24",
         "Enlèvement épave",
+        "Épaviste",
+        "Véhicule hors d'usage",
         "Transport véhicule",
         "Véhicule en panne",
         "Véhicule accidenté",
         "Camion plateau",
-        "Dépannage urgence",
-        "Remorquage banlieue parisienne"
+        "Recyclage automobile",
+        "Convoyage véhicule"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Prestations T Auto Services",
         "itemListElement": [
-          {
-            "@type": "Offer",
-            "priceCurrency": "EUR",
-            "description": "Remorquage véhicule sur devis, toute la France",
-            "itemOffered": { "@type": "Service", "name": "Remorquage véhicule", "serviceType": "Remorquage" }
-          },
           {
             "@type": "Offer",
             "priceCurrency": "EUR",
@@ -124,7 +118,7 @@
       },
       "potentialAction": {
         "@type": "ReserveAction",
-        "name": "Demander un remorquage",
+        "name": "Demander un enlèvement ou un transport",
         "target": {
           "@type": "EntryPoint",
           "urlTemplate": "tel:+33699939774",
