@@ -79,22 +79,22 @@
   var reviewsTrack = document.getElementById('reviews-track');
   if (reviewsTrack) {
     var reviews = [
-      { name: 'mehdi_k92', place: 'Nanterre', service: 'Enlèvement', text: 'top merci bcp', short: true },
-      { name: 'Sophie', place: 'Paris 15e', service: 'Enlèvement', text: 'Epave enlevée dans la semaine, devis respecté au tel. Merci !' },
-      { name: 'TomCreteil', place: 'Créteil', service: 'Transport', text: 'tres pro rapide nickel', short: true },
-      { name: 'Karim', place: 'Boulogne', service: 'Enlèvement', text: 'reponse rapide gars sympa je recommande' },
+      { name: 'mehdi_k92', place: 'Nanterre', service: 'Remorquage', text: 'top merci bcp', short: true },
+      { name: 'Sophie', place: 'Paris 15e', service: 'Remorquage', text: 'Bloquée un dimanche soir, venu en 40 min. Devis respecté au tel. Merci !' },
+      { name: 'TomCreteil', place: 'Créteil', service: 'Remorquage', text: 'tres pro rapide nickel', short: true },
+      { name: 'Karim', place: 'Boulogne', service: 'Remorquage', text: 'reponse rapide gars sympa je recommande' },
       { name: 'nadou_78', place: 'Versailles', service: 'Enlèvement', text: 'Enlevement epave sur devis comme promis. Rien a redire merci' },
-      { name: 'Marie', place: 'Montreuil', service: 'Enlèvement', text: 'Appel le matin, venu vite, super' },
-      { name: 'aicha.sd93', place: 'Saint-Denis', service: 'Transport', text: 'Parfait.', short: true },
-      { name: 'Lucas', place: 'Évry', service: 'Transport', text: 'nickel merci', short: true },
-      { name: 'jp_boul92', place: 'Boulogne', service: 'Enlèvement', text: 'Devis clair, RAS merci' },
-      { name: 'Claire', place: 'Versailles', service: 'Transport', text: 'Ma clio transportée sans souci. Merci !' },
+      { name: 'Marie', place: 'Montreuil', service: 'Remorquage', text: 'Appel a 23h ils sont venu vite, super' },
+      { name: 'aicha.sd93', place: 'Saint-Denis', service: 'Enlèvement', text: 'Parfait.', short: true },
+      { name: 'Lucas', place: 'Évry', service: 'Remorquage', text: 'nickel merci', short: true },
+      { name: 'jp_boul92', place: 'Boulogne', service: 'Remorquage', text: 'Devis clair, RAS merci' },
+      { name: 'Claire', place: 'Versailles', service: 'Remorquage', text: 'Ma clio en panne, remorqué sans souci. Merci !' },
       { name: 'fatima_b', place: 'Cergy', service: 'Enlèvement', text: 'top', short: true },
-      { name: 'Yann', place: 'Melun', service: 'Transport', text: 'Super service merci bcp' },
-      { name: 'soph_paris15', place: 'Paris 11e', service: 'Enlèvement', text: 'Disponible direct, rien a dire merci' },
-      { name: 'Bruno', place: 'Nanterre', service: 'Transport', text: 'Serieux et rapide je conseille' },
-      { name: 'leila_93', place: 'Bobigny', service: 'Enlèvement', text: 'Merci encore', short: true },
-      { name: 'Antoine', place: 'Créteil', service: 'Transport', text: 'Camion propre chauffeur cool. 5/5' }
+      { name: 'Yann', place: 'Melun', service: 'Enlèvement', text: 'Super service merci bcp' },
+      { name: 'soph_paris15', place: 'Paris 11e', service: 'Remorquage', text: 'Disponible direct, rien a dire merci' },
+      { name: 'Bruno', place: 'Nanterre', service: 'Remorquage', text: 'Serieux et rapide je conseille' },
+      { name: 'leila_93', place: 'Bobigny', service: 'Remorquage', text: 'Merci encore', short: true },
+      { name: 'Antoine', place: 'Créteil', service: 'Enlèvement', text: 'Camion propre chauffeur cool. 5/5' }
     ];
 
     function buildCard(review) {

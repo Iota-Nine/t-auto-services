@@ -2,7 +2,7 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/remorquage", "destination": "/", "permanent": true },
-    { "source": "/remorquage.html", "destination": "/", "permanent": true }
+    { "source": "/transport", "destination": "/", "permanent": true },
+    { "source": "/transport.html", "destination": "/", "permanent": true }
   ]
 }
